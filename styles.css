@@ -178,7 +178,7 @@ body, html {
 }
 
 .gallery {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -186,6 +186,7 @@ body, html {
     display: flex;
     align-items: center;
     margin-bottom: 10px; /* Reduced space between items */
+    transition: all 0.3s ease; /* Smooth transition for the entire card */
 }
 
 .gallery-item img, .gallery-item p {
@@ -196,7 +197,6 @@ body, html {
 .gallery-item img {
     width: 40%; /* Smaller image size */
     height: auto;
-    transition: transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .gallery-item p {
@@ -204,10 +204,13 @@ body, html {
     text-align: justify;
     background-color: #f8f8f8; /* Light background for the text for better readability */
     border: 1px solid #dddddd; /* Subtle border */
+    overflow: hidden; /* Ensures no text spills over */
+    transition: flex-grow 0.3s ease; /* Smooth transition for text area expansion */
 }
 
-.gallery-item:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
+.gallery-item:hover p {
+    flex-grow: 2; /* Increases text area size on hover */
+    padding: 20px; /* More padding for better readability */
 }
 
 .reverse {
