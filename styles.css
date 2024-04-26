@@ -33,6 +33,7 @@ body, html {
 .intro {
     font-family: cursive;
     font-size: xx-large;
+
 }
 
 .carousel {
@@ -201,7 +202,8 @@ body, html {
 .gallery-item p {
     padding: 25px; /* Reduced padding */
     text-align: left;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.5em;
     background-color: #f8f8f8; /* Light background for the text for better readability */
     border: 1px solid #dddddd; /* Subtle border */
 }
@@ -230,7 +232,34 @@ body, html {
     .carousel-button {
         display: none; /* Hide navigation buttons as they are no longer necessary */
     }
-    
+
+    .reverse {
+        flex-direction: row; /* Reverses the order of img and p for alternating effect */
+    }
+
+    .gallery {
+        width: auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px; /* Reduced space between items */
+    }
+
+    .gallery-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        width: 50%; /* Smaller image size */
+        height: auto;
+        transition: transform 0.3s ease; /* Smooth transition for hover effects */
+    }
+
+    .reverse {
+        flex-direction: row; /* Reverses the order of img and p for alternating effect */
+        align-items: column;
+    }
 
     .features {
         display: flex;
