@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorometry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img src="img/about.png" alt="Profile Image" class="profile-image">
+        <p>Manny the Artist</p>
+    </div>
+    <div class="carousel">
+        <button class="carousel-button prev-button" onclick="moveCarousel(-1)">❮</button>
+        <div class="carousel-cards">
+            <!-- Each card -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Card Title 1</h3>
+                    <p>Description of the first card.</p>
+                </div>
+                <img src="img/IMG_0062.webp" alt="Image 1" class="card-image">
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Card Title 2</h3>
+                    <p>Description of the second card.</p>
+                </div>
+                <img src="img/IMG_0067.webp" alt="Image 2" class="card-image">
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Card Title 3</h3>
+                    <p>Description of the third card.</p>
+                </div>
+                <img src="img/IMG_0076.webp" alt="Image 3" class="card-image">
+            </div>
+        </div>
+        <button class="carousel-button next-button" onclick="moveCarousel(1)">❯</button>
+    </div>
+    <div class="text-section">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleif</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
