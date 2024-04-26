@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body, html {
     height: auto;
     overflow: auto;
     margin: 0;
-
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;  /* Change to column to stack elements vertically */
@@ -83,14 +88,132 @@ body, html {
 }
 
 .text-section {
-    width: 720px; /* Sets the width of the text section */
+    width: 820px; /* Sets the width of the text section */
     margin: 50px auto; /* Centers the section horizontally and adds vertical spacing */
+    padding: 15px;
     text-align: center; /* Centers the text inside the div */
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px; /* Sets the font size */
     line-height: 1.6; /* Improves readability by increasing the line height */
     color: #333; /* Sets the text color */
 }
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 15px;
+    flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+}
+
+.feature-card {
+    text-align: center;
+    width: 750px; /* Reduced width for smaller cards */
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px; /* Increased margin for more space between cards */
+    background-color: whitesmoke; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow for a deeper box effect */
+    border-radius: 8px; /* Rounded corners for the card */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Increased shadow on hover for a 3D effect */
+}
+
+.feature-card img {
+    width: 80px; /* Adjusted icon size for smaller cards */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    margin: 10px 0;
+    color: #333; /* Dark grey text for heading */
+}
+
+.feature-card p {
+    color: #666; /* Light grey text for paragraph */
+    font-size: 14px; /* Adjusted font size for smaller cards */
+}
+
+.footer {
+    background-color: whitesmoke; /* Dark background for the footer */
+    color: g; /* White text color for visibility */
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    max-width: 600px; /* Limiting width for better readability */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.instagram-link {
+    display: inline-block;
+    color: #000000; /* White text for visibility */
+    text-decoration: none;
+    font-size: 18px; /* Larger font size for emphasis */
+    margin-bottom: 10px;
+}
+
+.instagram-link:hover,
+.instagram-link:focus {
+    color: #F58529; /* Instagram's brand color for hover */
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+.instagram-icon {
+    width: 50px; /* Icon size */
+    height: auto;
+    vertical-align: middle; /* Aligns icon with text */
+    margin-right: 10px;
+}
+
+.footer p {
+    font-size: 14px; /* Smaller font size for secondary text */
+    margin-top: 0;
+}
+
+.gallery {
+    width: 80%;
+    overflow: hidden;
+}
+
+.gallery-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Reduced space between items */
+}
+
+.gallery-item img, .gallery-item p {
+    flex: 1;
+    margin: 5px; /* Reduced margin for a more compact look */
+}
+
+.gallery-item img {
+    width: 40%; /* Smaller image size */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.gallery-item p {
+    padding: 10px; /* Reduced padding */
+    text-align: justify;
+    background-color: #f8f8f8; /* Light background for the text for better readability */
+    border: 1px solid #dddddd; /* Subtle border */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.reverse {
+    flex-direction: row-reverse; /* Reverses the order of img and p for alternating effect */
+}
+
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
@@ -107,11 +230,55 @@ body, html {
     .carousel-button {
         display: none; /* Hide navigation buttons as they are no longer necessary */
     }
+    
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        padding: 15px;
+        flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+    }
+    
+    .feature-card {
+        text-align: center;
+        width: 100%; /* Reduced width for smaller cards */
+        padding: 15px;
+        box-sizing: border-box;
+        margin: 15px; /* Increased margin for more space between cards */
+        background-color: whitesmoke; /* White background for the card */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow for a deeper box effect */
+        border-radius: 8px; /* Rounded corners for the card */
+        transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    .feature-card:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Increased shadow on hover for a 3D effect */
+    }
+    
+    .feature-card img {
+        width: 80px; /* Adjusted icon size for smaller cards */
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .feature-card h3 {
+        margin: 10px 0;
+        color: #333; /* Dark grey text for heading */
+    }
+    
+    .feature-card p {
+        color: #666; /* Light grey text for paragraph */
+        font-size: 14px; /* Adjusted font size for smaller cards */
+    }
 
     .text-section {
-        width: 80%;
-        height: auto;
-        text-align: center;
-        font-size: 25px;
+        width: 100%; /* Sets the width of the text section */
+        margin: 50px auto; /* Centers the section horizontally and adds vertical spacing */
+        text-align: center; /* Centers the text inside the div */
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px; /* Sets the font size */
+        line-height: 1.6; /* Improves readability by increasing the line height */
+        color: #333; /* Sets the text color */
     }
 }
