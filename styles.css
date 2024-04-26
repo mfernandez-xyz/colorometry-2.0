@@ -25,6 +25,12 @@ body, html {
     margin-bottom: 20px;
 }
 
+.intro {
+    font-family: cursive;
+    font-size: xx-large;
+
+}
+
 .carousel {
     width: 90%; /* Larger width for the carousel */
     overflow: hidden;
@@ -77,10 +83,11 @@ body, html {
 }
 
 .text-section {
-    width: 80%; /* Sets the width of the text section */
+    width: 720px; /* Sets the width of the text section */
     margin: 50px auto; /* Centers the section horizontally and adds vertical spacing */
     text-align: center; /* Centers the text inside the div */
-    font-size: 18px; /* Sets the font size */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px; /* Sets the font size */
     line-height: 1.6; /* Improves readability by increasing the line height */
     color: #333; /* Sets the text color */
 }
@@ -99,5 +106,12 @@ body, html {
 
     .carousel-button {
         display: none; /* Hide navigation buttons as they are no longer necessary */
+    }
+
+    .text-section {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        font-size: 25px;
     }
 }
