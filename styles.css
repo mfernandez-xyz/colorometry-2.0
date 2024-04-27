@@ -178,7 +178,7 @@ body, html {
 }
 
 .gallery {
-    width: 40%;
+    width: 60%;
     overflow: hidden;
 }
 
@@ -194,7 +194,7 @@ body, html {
 }
 
 .gallery-item img {
-    width: 15%; /* Smaller image size */
+    width: 25%; /* Smaller image size */
     height: auto;
     transition: transform 0.3s ease; /* Smooth transition for hover effects */
 }
@@ -233,11 +233,8 @@ body, html {
         display: none; /* Hide navigation buttons as they are no longer necessary */
     }
 
-    .reverse {
-        flex-direction: row; /* Reverses the order of img and p for alternating effect */
-    }
-
     .gallery {
+        position: relative;
         width: auto;
         display: grid;
         justify-content: center;
@@ -245,19 +242,33 @@ body, html {
         margin-bottom: 10px; /* Reduced space between items */
     }
 
+    #gallery-id-1 {
+        margin: auto;
+        padding: auto;
+    }
+
     .gallery-item {
-        display: flex;
+        display: block;
         align-items: center;
     }
 
     .gallery-item img {
-        width: 50%; /* Smaller image size */
-        height: auto;
+        width: 100%; /* Smaller image size */
         transition: transform 0.3s ease; /* Smooth transition for hover effects */
     }
 
+    .gallery-item p {
+        padding: 25px; /* Reduced padding */
+        text-align: left;
+        font-size: 17px;
+        line-height: 1.5em;
+        background-color: #f8f8f8; /* Light background for the text for better readability */
+        border: 1px solid #dddddd; /* Subtle border */
+    }
+
     .reverse {
-        flex-direction: row; /* Reverses the order of img and p for alternating effect */
+        display: block;
+        flex-direction: column; /* Reverses the order of img and p for alternating effect */
         align-items: column;
     }
 
@@ -309,5 +320,37 @@ body, html {
         font-size: 25px; /* Sets the font size */
         line-height: 1.6; /* Improves readability by increasing the line height */
         color: #333; /* Sets the text color */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+    .gallery {
+        position: relative;
+        width: auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px; /* Reduced space between items */
+    }
+
+    .gallery-item {
+        display: block;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        padding: 40px;
+        width: 100%; /* Smaller image size */
+        transition: transform 0.3s ease; /* Smooth transition for hover effects */
+    }
+
+    .gallery-item p {
+        padding: 40px; /* Reduced padding */
+        width: 100%;
+        text-align: left;
+        font-size: 17px;
+        line-height: 1.5em;
+        background-color: #f8f8f8; /* Light background for the text for better readability */
+        border: 1px solid #dddddd; /* Subtle border */
     }
 }
