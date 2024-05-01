@@ -33,58 +33,24 @@ body, html {
 .intro {
     font-family: cursive;
     font-size: xx-large;
-
 }
 
-.carousel {
-    width: 90%; /* Larger width for the carousel */
-    overflow: hidden;
-    margin: auto;
-}
-
-.carousel-cards {
+.hero {
     display: flex;
-    transition: transform 0.5s ease;
-    flex-direction: row; /* Default setting for larger screens */
+    width: 90%;  /* Gallery takes 90% of the body width */
+    justify-content: space-evenly; /* Distributes space around images evenly */
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden;  /* Allows horizontal scrolling if window is too small */
 }
 
-.card {
-    width: 90%; /* Width adjustment for better visibility on small screens */
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.hero img {
+    width: 100%; /* Reducing image width so all can fit in one row */
+    transition: transform 0.2s; /* Smooth transform effect on hover */
 }
 
-.card-content {
-    padding: 20px;
-    flex: 1; /* Allows text content to fill the space, pushing the image to the bottom */
-}
-
-.card-image {
-    width: 100%; /* Ensures the image covers the full width of the card */
-    height: 100%; /* Increases height to display larger images */
-    object-fit: contain; /* Changes from 'cover' to 'contain' to ensure no cropping occurs */
-    background-color: #f4f4f4; /* Provides a background color for any empty space */
-}
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.prev-button {
-    left: 10px;
-}
-
-.next-button {
-    right: 10px;
+.hero img:hover {
+    transform: scale(1.05); /* Slightly enlarge the images on hover */
 }
 
 .text-section {
@@ -219,18 +185,12 @@ body, html {
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
-    .carousel-cards {
+    .hero {
+        display: flex;
         flex-direction: column; /* Stack cards vertically */
         transform: none; /* Remove any transforms applied */
-    }
-
-    .card {
         width: 100%; /* Full width to utilize the screen space */
         margin-bottom: 20px; /* Add more space between cards */
-    }
-
-    .carousel-button {
-        display: none; /* Hide navigation buttons as they are no longer necessary */
     }
 
     .gallery {
@@ -254,6 +214,7 @@ body, html {
     .gallery-item img {
         width: 100%; /* Smaller image size */
         transition: transform 0.3s ease; /* Smooth transition for hover effects */
+        margin: auto;
     }
 
     .gallery-item p {
