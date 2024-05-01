@@ -41,7 +41,7 @@ body, html {
     justify-content: space-evenly; /* Distributes space around images evenly */
     align-items: center;
     gap: 20px;
-    overflow-x: hidden;  /* Allows horizontal scrolling if window is too small */
+    
 }
 
 .hero img {
@@ -182,6 +182,24 @@ body, html {
     flex-direction: row-reverse; /* Reverses the order of img and p for alternating effect */
 }
 
+.other-paintings {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.other-paintings img {
+    width: 10%; /* Each image takes up roughly one-third of the gallery width */
+    margin: 10px;
+    transition: transform 0.2s; /* Smooth transform effect on hover */
+}
+
+.other-paintings img:hover {
+    transform: scale(1.05); /* Slightly enlarge the images on hover */
+}
+
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
@@ -191,6 +209,10 @@ body, html {
         transform: none; /* Remove any transforms applied */
         width: 100%; /* Full width to utilize the screen space */
         margin-bottom: 20px; /* Add more space between cards */
+    }
+
+    .other-paintings {
+        visibility: hidden;
     }
 
     .gallery {
