@@ -35,6 +35,15 @@ body, html {
     font-size: xx-large;
 }
 
+.featured-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center;
+    padding: auto;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
 .hero {
     display: flex;
     width: 90%;  /* Gallery takes 90% of the body width */
