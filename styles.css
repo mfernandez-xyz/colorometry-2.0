@@ -201,15 +201,30 @@ body, html {
 
 .other-paintings {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap:20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns that wrap and fill the space */
+    gap: 10px;
+    width: 90vw; /* 90% of the viewport width */
+    
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: auto; /* Adds scrollbars if content overflows */
+}
+
+.other-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; /* White background for grid items */
+    border: 1px solid #ddd; /* Light grey border */
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .other-paintings img {
-    width: 100%;
+
+    max-width: 100%; /* Allows the image to resize based on its container's size */
     height: auto;
-    border-radius: 8px;
+    display: block; /* Removes bottom space/gap below the image */
     transition: transform 0.3s ease;
 }
 
@@ -228,12 +243,10 @@ body, html {
         margin-bottom: 20px; /* Add more space between cards */
     }
 
-    .other-paintings {
-        grid-template-columns: 1fr;
-    }
-
-    .other-paintings {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .other-item {
+        .grid-container {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust column size for smaller screens */
+        }
     }
 
     .gallery {
