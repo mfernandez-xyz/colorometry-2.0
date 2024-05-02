@@ -16,6 +16,11 @@ body, html {
     background-color: #f4f4f4;
 }
 
+.home-button {
+    color: #000000;
+    padding: auto;
+}
+
 .profile-container {
     text-align: center;
     margin-top: 60px;
@@ -98,7 +103,7 @@ body, html {
 }
 
 .feature-card img {
-    width: 80px; /* Adjusted icon size for smaller cards */
+    width: 40px; /* Adjusted icon size for smaller cards */
     height: auto;
     margin-bottom: 10px;
 }
