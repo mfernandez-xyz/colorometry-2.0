@@ -13,7 +13,7 @@ body, html {
     flex-direction: column;  /* Change to column to stack elements vertically */
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: lightgray;
 }
 
 .home-button {
@@ -119,7 +119,7 @@ body, html {
 }
 
 .footer {
-    background-color: whitesmoke; /* Dark background for the footer */
+    background-color: lightgray; /* Dark background for the footer */
     color: black; /* White text color for visibility */
     text-align: center;
     padding: 20px 10px;
