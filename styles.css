@@ -61,6 +61,7 @@ body, html {
 .hero img {
     width: 100%; /* Reducing image width so all can fit in one row */
     transition: transform 0.2s; /* Smooth transform effect on hover */
+    object-fit: cover;
 }
 
 .hero img:hover {
