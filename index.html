@@ -1,87 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colorometry</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-  <body>
-    <div class="profile-container">
-        <img src="img/about-small.webp" alt="Profile Image" class="profile-image">
-        <h1 class="intro">Manuel the Artist</h1>
-    </div>
-    <h2 class="featured-title">Featured</h2>
-    <div class="hero">
-        <a href="gallery.html#gallery-id-1"><img src="img/april-2024-1.webp" alt="Image 1" class="hero-image" loading="lazy"></a>
-        <a href="gallery.html#gallery-id-2"><img src="img/april-2024-2.webp" alt="Image 2" class="hero-image" loading="lazy"></a>
-        <a href="gallery.html#gallery-id-3"><img src="img/april-2024-3.webp" alt="Image 3" class="hero-image" loading="lazy"></a>
-        <a href="gallery.html#gallery-id-4"><img src="img/april-2024-4.webp" alt="Image 4" class="hero-image" loading="lazy"></a>
-        <a href="gallery.html#gallery-id-5"><img src="img/april-2024-5.webp" alt="Image 2" class="hero-image" loading="lazy"></a>
-        <a href="gallery.html#gallery-id-6"><img src="img/april-2024-6.webp" alt="Image 3" class="hero-image" loading="lazy"></a>
-        </div>
-    <div class="text-section">
-        <p>Hello! I'm an artist fueled by the interplay of shapes and vibrant colors. My work blends logic with emotion, using geometric forms as a foundation to engage the mind and vivid hues to stir the soul. Join me each month for a sensory and thought-provoking journey. Whether you're drawn to the precision of geometry or the depth of color, my goal is to enrich your appreciation of geometric art.</p>
-    </div>
-        <div class="features">
-            <div class="feature-card">
-                <img src="img/geometry.png" alt="three shapes in black">
-                <h3>The Geometry</h3>
-                <p>I exclusively use a compass and straight edge to craft all the circles and lines required for the templates that form the foundation of my paintings. This precise method ensures each artwork is rooted in meticulous geometry and craftsmanship.</p>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Colorometry</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Welcome</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1 gradient-text">Colorometry</h1>
+                <h3 class="mb-5 header-h3"><em>Exploring the boundary between color and geometry</em></h3>
+                <!--<a class="btn btn-primary btn-xl" href="#about">Find Out More</a>-->
+                <img src="assets/img/LogoTransparency.png" width="200px" height="auto" alt="colorfull circular shape">
             </div>
-            <div class="feature-card">
-                <img src="img/color.png" alt="color palette in black">
-                <h3>The Colors</h3>
-                <p>In my paintings, I only use primary and secondary colors, perfectly complementing the six circles of the Seed of Life, which serves as the foundational structure for most of my artwork. This deliberate choice of colors enhances the geometric harmony and visual impact of each piece.</p>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Manuel the artist</h2>
+                        <p class="lead mb-5">
+                            Hello! I'm an artist fueled by the interplay of shapes and vibrant colors. My work blends logic with emotion, using geometric forms as a foundation to engage the mind and vivid hues to stir the soul. Join me each month for a sensory and thought-provoking journey. Whether you're drawn to the precision of geometry or the depth of color, my goal is to enrich your appreciation of geometric art.
+                        </p>
+                        <img src="assets/img/ProfilePic.jpg" width="200px" height="auto" alt="upclose image of me with a hat and a scarf">
+                        <!--<a class="btn btn-dark btn-xl" href="#services">What We Offer</a>-->
+                    </div>
+                </div>
             </div>
-            <div class="feature-card">
-                <img src="img/spiritual.png" alt="lotus in black">
-                <h3>The Spiritual</h3>
-                <p>My paintings infuse spiritual depth through color symbolism: yellow for the Spirit, blue for heaven, red for hell, purple for beings, green for angels, and orange for demons. Each hue represents a unique entity of existence.</p>
+        </section>
+        <!-- Services-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-secondary mb-0">Welcome</h3>
+                    <h2 class="mb-5">Discover, learn, and be inspired. Welcome to the art of color and geometry.</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-shapes"></i></span>
+                        <h4><strong>The Geometry</strong></h4>
+                        <p class="text-faded mb-0">I exclusively use a compass and straight edge to craft all the circles and lines required for the templates that form the foundation of my paintings. This precise method ensures each artwork is rooted in meticulous geometry and craftsmanship.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-palette"></i></span>
+                        <h4><strong>The Color</strong></h4>
+                        <p class="text-faded mb-0">In my paintings, I only use primary and secondary colors, perfectly complementing the six circles of the Seed of Life, which serves as the foundational structure for most of my artwork. This deliberate choice of colors enhances the geometric harmony and visual impact of each piece.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-hands-praying"></i></span>
+                        <h4><strong>The Spiritual</strong></h4>
+                        <p class="text-faded mb-0">
+                            My paintings infuse spiritual depth through color symbolism: yellow for the Spirit, blue for heaven, red for hell, purple for beings, green for angels, and orange for demons. Each hue represents a unique entity of existence.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-blog"></i></span>
+                        <h4><strong>The Blog</strong></h4>
+                        <p class="text-faded mb-0">Join me on this journey as I share insights, techniques, and the meanings behind every stroke and hue. Whether you're an art enthusiast, a geometry lover, or a spiritual seeker, <a href="https://colorometry.blog">Colorometry.blog</a> offers a unique perspective that bridges the gap between the mathematical and the mystical.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-            <dib>
-                <h2 class="other-paintings-title">Other Paintings</h2>
+        </section>
+        <!-- Callout-->
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-5">
+                    <em>April</em>
+                </h2>
+                <!--<a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>-->
             </div>
-        <div class="other-paintings">
-            <a href="img/april-other-2024-1.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-1.webp" alt="Image 1"></a>
-            <a href="img/april-other-2024-2.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-2.webp" alt="Image 2"></a>
-            <a href="img/april-other-2024-3.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-3.webp" alt="Image 3"></a>
-            <a href="img/april-other-2024-4.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-4.webp" alt="Image 4"></a>
-            <a href="img/april-other-2024-5.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-5.webp" alt="Image 5"></a>
-            <a href="img/april-other-2024-6.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-6.webp" alt="Image 6"></a>
-            <a href="img/april-other-2024-7.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-7.webp" alt="Image 7"></a>
-            <a href="img/april-other-2024-9.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-9.webp" alt="Image 9"></a>
-            <a href="img/april-other-2024-10.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-10.webp" alt="Image 10"></a>
-            <a href="img/april-other-2024-11.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-11.webp" alt="Image 11"></a>
-            <a href="img/april-other-2024-12.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-12.webp" alt="Image 12"></a>
-            <a href="img/april-other-2024-13.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-13.webp" alt="Image 13"></a>
-            <a href="img/april-other-2024-14.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-14.webp" alt="Image 14"></a>
-            <a href="img/april-other-2024-15.webp" target="_blank">
-            <img class="ohter-item" src="img/april-other-2024-15.webp" alt="Image 15"></a>
-            <!--<img src="img/april-other-8.webp" alt="Image 6">-->
-        </div>
-        <footer class="footer">
+        </section>
+        <!-- Portfolio-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Portfolio</h3>
+                    <h2 class="mb-5">Featured</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Looking glass</div>
+                                    <p class="mb-0">At the core of the composition, the interplay of these petals creates a kaleidoscopic effect, as if they are perpetually spinning and intertwining.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Unity and Coherence</div>
+                                    <p class="mb-0">This geometric painting features a striking dodecahedron at its center, serving as a vivid exploration of color and form.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Parachutes</div>
+                                    <p class="mb-0">This painting features interlacing shapes that resemble parachutes, arranged in dynamic opposition as if inflating each other.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Perfect Balance</div>
+                                    <p class="mb-0">This painting was crafted using the Seed of Life as its foundational structure, augmented by √2 circles. The design incorporates 12 circles evenly distributed around a central circle, creating an intricate pattern.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Proportion and Balance</div>
+                                    <p class="mb-0">This geometric painting ingeniously uses circles arranged in a specific matter to facilitate the drawing of square view forms, featuring two golden ratio squares that anchor the composition.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-5.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Intertwining</div>
+                                    <p class="mb-0">In this geometric painting, six overlapping circles form a complex and mesmerizing design. Each circle is uniquely split into two colors, creating a vibrant and symbolic interplay.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio-6.jpg" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <section class="container">
+            <h2 class="text-center my-4">Others from April</h2>
+            <div class="gallery">
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-1.webp" alt="Image 1">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-2.webp" alt="Image 2">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-3.webp" alt="Image 3">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-4.webp" alt="Image 4">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-5.webp" alt="Image 5">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-6.webp" alt="Image 6">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-7.webp" alt="Image 4">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-8.jpeg" alt="Image 5">
+                </div>
+                <div class="gallery-item col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="assets/img/april-other-9.jpeg" alt="Image 6">
+                </div>
+            </div>
+        </section>
+        <!--<section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+            </div>
+        </section>-->
+        <!-- Map-->
+        <!--<div class="map" id="contact">
+            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <br />
+            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+        </div>-->
+        <!-- Footer-->
+        <footer class="footer" id="contact">
             <div class="footer-content">
                 <a href="https://instagram.com/colorometry.xyz" target="_blank" class="instagram-link">
-                    <img src="img/instagram-logo.png" alt="Instagram Icon" class="instagram-icon">
+                    <img src="assets/img/instagram-logo.png" alt="Instagram Icon" class="instagram-icon">
                 DM me on Instagram anytime!
                 </a>
                 <p>Feel free to reach out with your thoughts and questions. I'm always here to chat!</p>
             </div>
         </footer>
-</body>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
